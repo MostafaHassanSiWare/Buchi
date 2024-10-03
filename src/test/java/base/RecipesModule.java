@@ -1,7 +1,4 @@
 package base;
-
-
-
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -62,7 +59,6 @@ public void startTestRecipesList() throws InterruptedException {
         recipesPage.rowsPerPageIsDisplayed();
         recipesPage.frowardRowBtnIsDisplayed();
         recipesPage.frowardPageBtnIsDisplayed();
-
     }
     @Test(priority = 3)
     public void filterByName() throws InterruptedException {
@@ -197,8 +193,6 @@ public void startTestRecipesList() throws InterruptedException {
 //    recipesPage.ClickSortingNameRPBtn();
 //    recipesPage.clickPinNameColumnOption();
     recipesPage.refreshWindow();
-
-
     }
     @Test(priority = 10)
     public void viewColumnsInParametersList () throws InterruptedException {
@@ -269,6 +263,53 @@ public void startTestRecipesList() throws InterruptedException {
     public void viewCalibrationFiles(){
     recipesPage.ClickFirstRowActionsBtnRP();
     recipesPage.ClickFirstRowViewCalFilesOptionRP();
+    }
+    @Test(priority = 12)
+    public void checkCalibrationFilesList(){
+    recipesPage.calibrationFilesBackPageBtnIsDisplayed();
+    recipesPage.calibrationFilesBckRowBtnIsDisplayed();
+    recipesPage.calibrationFilesDeployedAtFieldIsDisplayed();
+    recipesPage.calibrationFilesExpandBtnIsDisplayed();
+    recipesPage.calibrationFilesDeployedAtFieldIsDisplayed();
+    recipesPage.calibrationFilesFrowardPageBtnIsDisplayed();
+    recipesPage.calibrationFilesPageTitleIsDisplayed();
+    recipesPage.calibrationFilesSearchBtnIsDisplayed();
+    recipesPage.calibrationFilesSearchTextFieldIsDisplayed();
+    recipesPage.viewCalibrationFilesBtnIsDisplayed();
+    recipesPage.filterCalibrationFilesBtnIsDisplayed();
+    }
+    @Test(priority = 13)
+    public void filterCalibrationFiles(){
+    recipesPage.clickFilterCalibrationFilesBtn();
+    recipesPage.calibrationFilesApplyFilterBtnIsDisplayed();
+    recipesPage.calibrationFilesClearFilterBtnIsDisplayed();
+    recipesPage.calibrationFilesCloseFilterBtnIsDisplayed();
+    recipesPage.calibrationFilesCancelFilterBtnIsDisplayed();
+    recipesPage.calibrationFilesFilterWindowTitleIsDisplayed();
+    recipesPage.calibrationFilesFilterCreatedAtIsDisplayed();
+    recipesPage.calibrationFilesFilterNameIsDisplayed();
+    recipesPage.calibrationFilesFilterCreatedByIsDisplayed();
+    recipesPage.ClickCalibrationFilesCancelFilterBtn();
+
+    }
+
+    @Test(priority = 14)
+    public void expandCalibrationFilesList(){
+    recipesPage.clickExpandBtnCalibrationFiles();
+    recipesPage.calibrationFilesStatusFieldIsDisplayed();
+    recipesPage.calibrationFilesDeployedAtFieldIsDisplayed();
+    recipesPage.calibrationFilesModifiedAtFieldIsDisplayed();
+    recipesPage.calibrationFilesCreatedAtFieldIsDisplayed();
+    recipesPage.calibrationFilesSecondRowActionBtnIsDisplayed();
+    }
+    @Test(priority = 15)
+    public void deployFileOnCalibrationFiles(){
+    recipesPage.clickOnActionBtnCalibrationFiles();
+    recipesPage.clickOnDeployBtn();
+    recipesPage.calibrationFilesDeploymentPopupCloseBtnIsDisplayed();
+    recipesPage.calibrationFilesDeploymentPopupTitleIsDisplayed();
+    recipesPage.calibrationFilesDeploymentPopupCancelBtnIsDisplayed();
+    recipesPage.calibrationFilesDeploymentPopupSubmitBtnIsDisplayed();
     }
 
 

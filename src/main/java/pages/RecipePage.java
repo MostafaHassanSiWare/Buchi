@@ -142,7 +142,7 @@ public class RecipePage extends MethodHandles {
     private WebElement firstRowDeleteAction;
 
     //rows per page field
-    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div[1]/div[2]/div/div/div[1]/div[2]/input")
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[1]/div[2]/div/div/div[1]/div[2]/input")
     private WebElement rowsPerPage;
 
     //back page button
@@ -166,7 +166,7 @@ public class RecipePage extends MethodHandles {
     private WebElement filterBtn;
 
     //view button
-    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/button")
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/button[1]")
     private WebElement viewBtn;
 
     //toggle to affiliate view
@@ -220,7 +220,7 @@ public class RecipePage extends MethodHandles {
     private WebElement filterApplyBtn;
 
     //filter close button
-    @FindBy(xpath = "/html/body/div[3]/button/svg")
+    @FindBy(xpath = "/html/body/div[3]/button")
     private WebElement filterCloseBtn;
     //</editor-fold>
 
@@ -242,7 +242,7 @@ public class RecipePage extends MethodHandles {
     private WebElement addParameterBtn;
 
     //rows per page field
-    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div[1]/div[2]/div/div/div[1]/div[2]/input")
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[1]/div[2]/div/div/div[1]/div[2]/input")
     private WebElement recipeParametersRowsPerPage;
 
     //back page button
@@ -298,7 +298,7 @@ public class RecipePage extends MethodHandles {
     private WebElement recipeParametersCloseFilterBtn;
 
     //view button in recipe parameters page
-    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/button")
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/button[1]")
     private WebElement viewRecipeParametersBtn;
 
     //toggle to location view
@@ -378,7 +378,7 @@ public class RecipePage extends MethodHandles {
     private WebElement sortingRPParameterAliasDesc;
 
     //first row name in recipe parameter page
-    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr/td[2]/div/p")
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[2]/div/p")
     private WebElement firstRowNameRP;
 
     //second row name in recipe parameter page
@@ -405,6 +405,208 @@ public class RecipePage extends MethodHandles {
     @FindBy(xpath = "/html/body/div[2]/div/div")
     private WebElement firstRowViewCalibrationActions;
     //</editor-fold
+
+          //<editor-fold desc = "Allocators for Calibration files page">
+
+    //Calibration files page title
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[1]/div[1]/div[1]/h4")
+        private WebElement calibrationFilesPageTitle;
+
+    //calibration files search field
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/form/div/div/div/div/div/input")
+    private WebElement calibrationFilesSearchField;
+
+    //search button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/form/div/button")
+    private WebElement calibrationFilesSearchBtn;
+
+
+    //rows per page field
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[1]/div[2]/div/div/div[1]/div[2]/input")
+    private WebElement rowsPerPageCalibrationFiles;
+
+    //back page button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[2]/div[2]/button[1]")
+    private WebElement calibrationFilesBackPageBtn;
+
+    //back row button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[2]/div[2]/button[2]")
+    private WebElement calibrationFilesBckRowBtn;
+
+    //froward row button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[2]/div[2]/button[3]")
+    private WebElement calibrationFilesFrowardRowBtn;
+
+    //froward page button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[4]/div/div/div[2]/div[2]/button[4]")
+    private WebElement calibrationFilesFrowardPageBtn;
+
+    //filter button in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/div/button")
+    private WebElement calibrationFilesFilterBtn;
+
+    //view button in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[2]/div/button[1]")
+    private WebElement calibrationFilesViewBtn;
+
+    //calibration files filter window title
+    @FindBy(xpath = "/html/body/div[3]/div/h4")
+    private WebElement calibrationFilesFilterWindowTitle;
+
+    //name text field in calibration Files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[1]/div[1]/div/div/div/input")
+    private WebElement calibrationFilesFilterName;
+
+    //created at text field in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[1]/div[2]/div/input")
+    private WebElement calibrationFilesFilterCreatedAt;
+
+    //created by text field in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[1]/div[3]/div/div/div[1]/div[2]/input")
+    private WebElement calibrationFilesFilterCreatedBy;
+
+    //cancel filter button in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[2]/button")
+    private WebElement calibrationFilesCancelFilterBtn;
+
+    //clear filter button in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[2]/div/button[1]")
+    private WebElement calibrationFilesClearFilterBtn;
+
+    //apply filter button in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/form/div[2]/div/button[2]")
+    private WebElement calibrationFilesApplyFilterBtn;
+
+    //close filter button in calibration files filter window
+    @FindBy(xpath = "/html/body/div[3]/button")
+    private WebElement calibrationFilesCloseFilterBtn;
+
+    //toggle to created at view
+    @FindBy(xpath = "/html/body/div[2]/div/div[3]")
+    private WebElement toggleToCreatedAtCalibrationFiles;
+
+    //toggle to deployed at view
+    @FindBy(xpath = "/html/body/div[2]/div/div[4]")
+    private WebElement toggleToDeployedAtCalibrationFiles;
+
+    //clear any pinning view option
+    @FindBy(xpath = "/html/body/div[2]/div/div[6]")
+    private WebElement clearPinningViewCalibrationFiles;
+
+    //clear any sorting view option
+    @FindBy(xpath = "/html/body/div[2]/div/div[7]")
+    private WebElement clearSortingViewCalibrationFiles;
+
+    //sorting name column in calibration files page Asc
+    @FindBy(xpath = "/html/body/div[2]/div/div[1]")
+    private WebElement sortingCalibrationFilesNameAsc;
+
+    //sorting name column in calibration files page Desc
+    @FindBy(xpath = "/html/body/div[2]/div/div[2]")
+    private WebElement sortingCalibrationFilesNameDesc;
+
+    //pin name column in calibration files page
+    @FindBy(xpath = "/html/body/div[2]/div/div[4]")
+    private WebElement pinCalibrationFilesName;
+
+    //first row name in calibration files page
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[2]/div/p")
+    private WebElement firstRowNameCalibrationFiles;
+
+    //first row type in the calibration files page
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[3]/div/p")
+    private WebElement firstRowTypeCalibrationFiles;
+
+    //second row name in calibration files page
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[2]/div/p")
+    private WebElement secondRowNameCalibrationFiles;
+
+    //second row type in the calibration files page
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[2]/td[3]/div/p")
+    private WebElement secondRowTypeCalibrationFiles;
+
+    //first column header in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/thead/tr/th[2]/div/div/div/p")
+    private WebElement firstColumnHeaderCalibrationFiles;
+
+    //second column header in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/thead/tr/th[3]/p")
+    private WebElement secondColumnHeaderCalibrationFiles;
+
+    //third column header in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/thead/tr/th[4]/div/div/div/p")
+    private WebElement thirdColumnHeaderCalibrationFiles;
+
+    //fourth column header in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/thead/tr/th[5]/div/div/div/p")
+    private WebElement fourthColumnHeaderCalibrationFiles;
+
+    //fifth column header in calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/thead/tr/th[6]/div/div/div/p")
+    private WebElement fifthColumnHeaderCalibrationFiles;
+
+    //expand and collapse the calibration files button
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/tr[1]/td[1]/div")
+    private WebElement expandCalibrationFilesBtn;
+
+    //file status in first row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[1]/td[1]/div/div")
+    private WebElement filesStatusInFirstRow;
+
+    //file created at in first row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[1]/td[2]/p")
+    private WebElement filesCreatedAtInFirstRow;
+
+    //file modified at in first row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[1]/td[3]/p")
+    private WebElement filesModifiedAtInFirstRow;
+
+    //file deployed at in first row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[1]/td[4]/p")
+    private WebElement filesDeployedAtInFirstRow;
+
+    //file status in second row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[2]/td[1]/div/div")
+    private WebElement filesStatusInSecondRow;
+
+    //file created at in second row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[2]/td[2]/p")
+    private WebElement filesCreatedAtInSecondRow;
+
+    //file modified at in second row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[2]/td[3]/p")
+    private WebElement filesModifiedAtInSecondRow;
+
+    //file deployed at in second row calibration files
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[2]/td[4]/p")
+    private WebElement filesDeployedAtInSecondRow;
+
+    //file action button for the second row
+    @FindBy(xpath = "/html/body/div/div[1]/div[3]/div[2]/div/div[3]/table/tbody/div/div[1]/table/tbody/tr[3]/td[5]/button")
+    private WebElement fileActionBtnInSecondRow;
+
+    //file deploy button on the action list on the second row
+    @FindBy(xpath = "/html/body/div[2]/div")
+    private WebElement deployBtnOnActionList;
+
+    //submit button in the deploy popup after clicking deploy button
+    @FindBy(xpath = "/html/body/div[3]/div[3]/div/button")
+    private WebElement submitBtn;
+
+    //cancel button in the deploy popup after clicking deploy button
+    @FindBy(xpath = "/html/body/div[3]/div[3]/button")
+    private WebElement cancelBtn;
+
+    //close button after in the deploy popup after clicking deploy button
+    @FindBy(xpath = "/html/body/div[3]/button")
+    private WebElement closeBtn;
+
+    //deploy popup title
+    @FindBy(xpath = "/html/body/div[3]/h4")
+    private WebElement deployPopupTitle;
+
+
+
 
 
     /************************Is Displayed Methods*****************************/
@@ -683,6 +885,105 @@ public class RecipePage extends MethodHandles {
     public boolean viewRecipeParametersBtnIsDisplayed() {
         return isDisplayed(viewRecipeParametersBtn, 10);
     }
+
+            //<editor-fold desc = "Is displayed methods for calibration files page">
+    //method check if calibration files title is displayed
+    public boolean calibrationFilesPageTitleIsDisplayed() {
+        return isDisplayed(calibrationFilesPageTitle, 10);
+    }
+
+    //method check if calibration files search text field is displayed
+    public boolean calibrationFilesSearchTextFieldIsDisplayed() {
+        return isDisplayed(calibrationFilesSearchField, 10);
+    }
+
+    //method check if search button is displayed
+    public boolean calibrationFilesSearchBtnIsDisplayed() {
+        return isDisplayed(calibrationFilesSearchBtn, 10);
+    }
+
+    //method check if back page button in calibration files is displayed
+    public boolean calibrationFilesBackPageBtnIsDisplayed() {
+        return isDisplayed(calibrationFilesBackPageBtn, 10);
+    }
+
+    //method check if back row button in calibration files is displayed
+    public boolean calibrationFilesBckRowBtnIsDisplayed() { return isDisplayed(calibrationFilesBckRowBtn, 10);}
+
+    //method check if froward row button in calibration files is displayed
+    public boolean calibrationFilesFrowardRowBtnIsDisplayed() {
+        return isDisplayed(calibrationFilesFrowardRowBtn, 10);
+    }
+
+    //method check if froward row button in calibration files is displayed
+    public boolean calibrationFilesFrowardPageBtnIsDisplayed() { return isDisplayed(calibrationFilesFrowardPageBtn, 10);}
+
+    //method check if filter button in calibration files is displayed
+    public boolean filterCalibrationFilesBtnIsDisplayed() {return isDisplayed(calibrationFilesFilterBtn, 10);}
+
+    //method check if calibration files filter window title is displayed
+    public boolean calibrationFilesFilterWindowTitleIsDisplayed() {return isDisplayed(calibrationFilesFilterWindowTitle, 10);}
+
+    //method check if filter name text field in calibration files is displayed
+    public boolean calibrationFilesFilterNameIsDisplayed() {
+        return isDisplayed(calibrationFilesFilterName, 10);
+    }
+
+    //method check if filter created at text field in calibration files is displayed
+    public boolean calibrationFilesFilterCreatedAtIsDisplayed() {return isDisplayed(calibrationFilesFilterCreatedAt, 10);}
+
+    //method check if filter created by text field in calibration files is displayed
+    public boolean calibrationFilesFilterCreatedByIsDisplayed() {return isDisplayed(calibrationFilesFilterCreatedBy, 10);}
+
+    //method check if filter cancel button in calibration files filter window is displayed
+    public boolean calibrationFilesCancelFilterBtnIsDisplayed() {return isDisplayed(calibrationFilesCancelFilterBtn, 10);}
+
+    //method check if filter clear button in calibration files filter window is displayed
+    public boolean calibrationFilesClearFilterBtnIsDisplayed() {return isDisplayed(calibrationFilesClearFilterBtn, 10);}
+
+    //method check if filter apply button in calibration files filter window is displayed
+    public boolean calibrationFilesApplyFilterBtnIsDisplayed() {return isDisplayed(calibrationFilesApplyFilterBtn, 10);}
+
+    //method check if filter close button in calibration files filter window is displayed
+    public boolean calibrationFilesCloseFilterBtnIsDisplayed() {return isDisplayed(calibrationFilesCloseFilterBtn, 10);}
+
+    //method check if view button in calibration files is displayed
+    public boolean viewCalibrationFilesBtnIsDisplayed() {
+        return isDisplayed(calibrationFilesViewBtn, 10);
+    }
+
+    //method check if collapse button is displayed
+    public boolean calibrationFilesExpandBtnIsDisplayed(){return  isDisplayed(expandCalibrationFilesBtn,10);}
+
+    //method check if file status field is displayed
+    public boolean calibrationFilesStatusFieldIsDisplayed(){return  isDisplayed(filesStatusInFirstRow,10);}
+
+    //method check if file created at field id displayed
+    public boolean calibrationFilesCreatedAtFieldIsDisplayed(){return  isDisplayed(filesCreatedAtInFirstRow,10);}
+
+    //method check if file modified at field id displayed
+    public boolean calibrationFilesModifiedAtFieldIsDisplayed(){return  isDisplayed(filesModifiedAtInFirstRow,10);}
+
+    //method check if file deployed at field id displayed
+    public boolean calibrationFilesDeployedAtFieldIsDisplayed(){return  isDisplayed(filesDeployedAtInFirstRow,10);}
+
+    //method to check if the action button in the second row is displayed
+    public boolean calibrationFilesSecondRowActionBtnIsDisplayed(){
+        return isDisplayed(fileActionBtnInSecondRow,10);
+    }
+
+    //method to check the deployment popup title is displayed
+    public boolean calibrationFilesDeploymentPopupTitleIsDisplayed(){return isDisplayed(deployPopupTitle,10);}
+
+    //method to check the deployment popup cancel button is displayed
+    public boolean calibrationFilesDeploymentPopupCancelBtnIsDisplayed(){return isDisplayed(cancelBtn,10);}
+
+    //method to check the deployment popup submit button is displayed
+    public boolean calibrationFilesDeploymentPopupSubmitBtnIsDisplayed(){return isDisplayed(submitBtn,10);}
+
+    //method to check the deployment popup close button is displayed
+    public boolean calibrationFilesDeploymentPopupCloseBtnIsDisplayed(){return isDisplayed(closeBtn,10);}
+
     //</editor-fold>
 
 
@@ -1060,13 +1361,132 @@ public class RecipePage extends MethodHandles {
 
     //method to click actions button in recipe parameters
     public boolean ClickFirstRowActionsBtnRP() {
-        return clickElement(firstRowActionsBtnInParameters);
-    }
+        return clickElement(firstRowActionsBtnInParameters);}
+
+    //<editor-fold desc = "Click methods for calibration files page">
 
     //method to click view calibration files action in recipe parameters
     public boolean ClickFirstRowViewCalFilesOptionRP() {
         return clickElement(firstRowViewCalibrationActions);
     }
+
+    //method to click recipe parameters search field
+    public boolean clickCalibrationFilesSearchField() {
+        return clickElement(calibrationFilesSearchField);}
+
+    //method to click calibration files search button
+    public boolean clickCalibrationFilesSearchBtn() {
+        return clickElement(calibrationFilesSearchBtn);}
+    //method to click back page button in calibration files page
+    public boolean clickCalibrationFilesBackPageBtn() {
+        return clickElement(calibrationFilesBackPageBtn);}
+
+    //method to click back row button in calibration files page
+    public boolean clickCalibrationFilesBackRowBtn() {
+        return clickElement(calibrationFilesBckRowBtn);}
+
+    //method to click froward row button in calibration files page
+    public boolean clickCalibrationFilesFrowardRowBtn() {
+        return clickElement(calibrationFilesFrowardRowBtn);}
+
+    //method to click froward page button in calibration files page
+    public boolean clickCalibrationFilesFrowardPageBtn() {
+        return clickElement(calibrationFilesFrowardPageBtn);}
+    //method to click filter button in calibration files page
+    public boolean clickFilterCalibrationFilesBtn() {
+        return clickElement(calibrationFilesFilterBtn);}
+
+    //method to click view button in calibration files page
+    public boolean clickViewCalibrationFilesBtn() {
+        return clickElement(calibrationFilesViewBtn);}
+
+    //method to click filter name text field in calibration files page
+    public boolean clickCalibrationFilesFilterName() {
+        return clickElement(calibrationFilesFilterName);}
+
+    //method to click filter created at text field in calibration files page
+    public boolean clickCalibrationFilesFilterCreatedAt() {
+        return clickElement(calibrationFilesFilterCreatedAt);}
+
+    //method to click filter created by text field in calibration files page
+    public boolean clickCalibrationFilesFilterCreatedBy() {
+        return clickElement(calibrationFilesFilterCreatedBy);}
+
+    //method to click filter cancel button in calibration files filter window
+    public boolean ClickCalibrationFilesCancelFilterBtn() {
+        return clickElement(calibrationFilesCancelFilterBtn);}
+
+    //method to click filter clear button in calibration files filter window
+    public boolean ClickCalibrationFilesClearFilterBtn() {
+        return clickElement(calibrationFilesClearFilterBtn);}
+
+    //method to click filter apply button in calibration files filter window
+    public boolean ClickCalibrationFilesApplyFilterBtn() {
+        return clickElement(calibrationFilesApplyFilterBtn);}
+
+    //method to click filter close button in calibration files filter window
+    public boolean ClickCalibrationFilesCloseFilterBtn() {
+        return clickElement(calibrationFilesCloseFilterBtn);}
+
+    //method to click toggle to create at view option in calibration files
+    public boolean ClickToggleToCreateAtViewCalibrationFilesOption() {
+        return clickElement(toggleToCreatedAtCalibrationFiles);}
+
+    //method to click toggle to deployed at view option in calibration files
+    public boolean ClickToggleToDeployedAtViewCalibrationFilesOption() {
+        return clickElement(toggleToDeployedAtCalibrationFiles);}
+
+    //method to click clear pinning view option in calibration files
+    public boolean ClickClearPinningViewCalibrationFilesViewRPOption() {
+        return clickElement(clearPinningViewCalibrationFiles);}
+
+    //method to click clear sorting view option in calibration files
+    public boolean ClickClearSortingViewRPViewCalibrationFilesOption() {
+        return clickElement(clearSortingViewCalibrationFiles);}
+
+    //method to click sorting name button in calibration files
+    public boolean ClickSortingNameCalibrationFilesBtn() {
+        return clickElement(nameSortingRPBtn);}
+
+    //method to click sorting name Asc option in calibration files
+    public boolean ClickSortingNameAscCalibrationFiles() {
+        return clickElement(sortingCalibrationFilesNameAsc);}
+
+    //method to click sorting name Desc option in calibration files
+    public boolean ClickSortingNameDescCalibrationFiles() {
+        return clickElement(sortingCalibrationFilesNameDesc);
+    }
+
+    //method to click pin name column option in calibration files
+    public boolean ClickPinNameCalibrationFiles() {
+        return clickElement(pinCalibrationFilesName);
+    }
+
+    //method to click on the action button on the calibration files
+    public boolean clickOnActionBtnCalibrationFiles(){
+        return clickElement(fileActionBtnInSecondRow);
+    }
+
+    //method to click expand or collapse button
+    public boolean clickExpandBtnCalibrationFiles(){
+        return clickElement(expandCalibrationFilesBtn);
+    }
+
+    //method to click deploy button on the second row
+    public boolean clickOnDeployBtn(){
+        return clickElement(deployBtnOnActionList);
+    }
+
+    //method to click close button on the deployment popup
+    public boolean clickCloseBtnOnDeploymentPopup(){return clickElement(closeBtn);}
+
+    //method to click cancel button on the deployment popup
+    public boolean clickCancelBtnOnDeploymentPopup(){return clickElement(cancelBtn);}
+
+    //method to click submit button on the deployment popup
+    public boolean clickSubmitBtnOnDeploymentPopup(){return clickElement(submitBtn);}
+
+
     //</editor-fold
 
 
@@ -1142,7 +1562,41 @@ public class RecipePage extends MethodHandles {
     }
     //</editor-fold>
 
-    //<editor-fold desc = "Get text methods for recipe parameters page">
+    //<editor-fold desc = "Get text methods for calibration files page">
+
+    //method to get calibration files page title
+    public String getCalibrationFilesTitle() {
+        return getElementText(calibrationFilesPageTitle);
+    }
+
+    //method to get text from calibration files search field
+    public String getCalibrationFilesSearchFieldText() {
+        return getElementText(calibrationFilesSearchField);
+    }
+
+    //method to get calibration files filter window title
+    public String getCalibrationFilesFilterWindowTitle() {
+        return getElementText(calibrationFilesFilterWindowTitle);
+    }
+
+    //method to get calibration files filter created at text field
+    public String getCalibrationFilesFilterCreatedAt() {
+        return getElementText(calibrationFilesFilterCreatedAt);
+    }
+
+    //method to get calibration files filter created by text field
+    public String getCalibrationFilesFilterCreatedBy() {
+        return getElementText(calibrationFilesFilterCreatedBy);
+    }
+
+    //method to get first row name in calibration files page
+    public String getFirstRowNameCalibrationFiles() {
+        return getElementText(firstRowNameCalibrationFiles);
+    }
+
+    //method to get second row name in calibration files page
+    public String getSecondRowNameCalibrationFiles() {return getElementText(secondRowNameCalibrationFiles);}
+
     //method to get recipe parameters page title
     public String getRecipeParametersTitle() {
         return getElementText(recipeParametersPageTitle);
@@ -1195,6 +1649,8 @@ public class RecipePage extends MethodHandles {
     public String getFirstRowBiasRP() {
         return getElementText(firstRowBiasRP);
     }
+
+
     //</editor-fold
 
 
@@ -1232,7 +1688,7 @@ public class RecipePage extends MethodHandles {
         return clearText(filterName);
     }
 
-    //method to send text to filter filter created at field
+    //method to send text to filter created at field
     public boolean sendTextToFilterCreatedAtTextField(String text) {
         return sendTextToElement(filterCreatedAt, text);
     }
@@ -1302,6 +1758,16 @@ public class RecipePage extends MethodHandles {
     //method to clear recipe parameters filter created by text field
     public boolean resetRecipeParametersFilterCreatedByField() {
         return clearText(recipeParametersFilterCreatedBy);
+    }
+
+    //method to send text to search field in calibration files page
+    public boolean sendTextToCalibrationFilesSearchField(String text) {
+        return sendTextToElement(calibrationFilesSearchField, text);
+    }
+
+    //method to send text to calibration files filter name text field
+    public boolean sendTextToCalibrationFilesFilterNameField(String text) {
+        return sendTextToElement(calibrationFilesFilterName, text);
     }
     //</editor-fold>
 }
